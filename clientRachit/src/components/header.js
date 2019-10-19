@@ -20,9 +20,6 @@ export class Header extends Component {
                       <li className="nav-item">
                         <a className="nav-link" href="feature.html">feature</a>
                       </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="pricing.html">pricing</a>
-                      </li>
                       <li className="nav-item dropdown">
                         <a className="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Blog
@@ -30,14 +27,6 @@ export class Header extends Component {
                         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                           <a className="dropdown-item" href="blog.html"> blog</a>
                           <a className="dropdown-item" href="single-blog.html">Single blog</a>
-                        </div>
-                      </li>
-                      <li className="nav-item dropdown">
-                        <a className="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          pages
-                        </a>
-                        <div className="dropdown-menu" aria-labelledby="navbarDropdown1">
-                          <a className="dropdown-item" href="elements.html">Elements</a>
                         </div>
                       </li>
                       <li className="nav-item">
