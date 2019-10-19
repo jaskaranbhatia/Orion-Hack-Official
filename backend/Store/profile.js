@@ -12,7 +12,8 @@ router.put('/' , async (req , res)=>{
             data.heigth = req.body.heigth,
             data.weight = req.body.weight,
             data.identificationMarks = req.body.identificationMarks,
-            data.BloodGroup = req.body.BloodGroup
+            data.BloodGroup = req.body.BloodGroup , 
+            data.allergies = [...data.allergies ,req.body.allergies]
             
     }
     data.save();
@@ -34,7 +35,8 @@ router.post('/' , async (req , res)=>{
             heigth : req.body.heigth,
             weight : req.body.weight,
             identificationMarks : req.body.identificationMarks,
-            BloodGroup : req.body.BloodGroup
+            bloodGroup : req.body.BloodGroup ,
+            allergies : req.body.allergies
         });
             
             data.save();
@@ -47,6 +49,17 @@ catch(e)
 router.get('/:name' , async (req , res)=>{
     try{
     const id = await profileModel.findOne({"name":req.params.name});
+    res.json(id);
+}
+catch(e)
+{
+    console.log(e)}
+}
+);
+
+router.get('/allergies' , async (req , res)=>{
+    try{
+    const id = await profileModel.findOne({"name":req.body.allergies});
     res.json(id);
 }
 catch(e)

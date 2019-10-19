@@ -8,8 +8,9 @@ const ProfileSchema = new mongoose.Schema(
     heigth : Number,
     weight : Number,
     identificationMarks : String,
-    BloodGroup : String
-}
+    bloodGroup : String,
+    allergies : [String]
+ }
 );
 const profileModel = mongoose.model("profile" , ProfileSchema);
 

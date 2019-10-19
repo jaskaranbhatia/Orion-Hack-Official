@@ -6,6 +6,7 @@ const HistorySchema = new mongoose.Schema(
     name : String,
     date : [String] ,
     symptom : [String] , 
+    disease : [String] ,
     bmi : [Number],
 }
 );

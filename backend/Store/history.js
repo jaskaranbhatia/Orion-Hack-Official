@@ -11,6 +11,7 @@ router.post('/' ,async (req , res)=>{
         data.date = [...data.date , req.body.date];
         data.symptom = [...data.symptom , req.body.symptom];
         data.bmi = [...data.bmi , req.body.bmi];   
+        data.disease = [...data.disease , req.body.disease];
         data.save();         
     }
 
@@ -19,7 +20,8 @@ router.post('/' ,async (req , res)=>{
             name : req.body.name,
             date : req.body.date , 
             symptom: req.body.symptom ,
-            bmi : req.body.bmi 
+            bmi : req.body.bmi ,
+            disease : req.body.disease
         });
         data.save();
     }
@@ -36,7 +38,8 @@ router.get('/:name' , async (req , res)=>{
 }
 catch(e)
 {
-    console.log(e)}
+    console.log(e);
+}
 }
 );
 module.exports = router;

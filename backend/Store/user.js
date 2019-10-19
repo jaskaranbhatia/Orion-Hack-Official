@@ -8,10 +8,11 @@ router.put('/' , async (req , res)=>{
     const data = await UserModel.findOne({"name": req.body.name});
     if(data)
     {
-            data.email = req.body.email , 
-            data.password= req.body.password ,
-            data.location = req.body.location ,
-            data.disease = req.body.disease
+            data.email = req.body.email;
+            data.password= req.body.password;
+            data.location = req.body.location ;
+            data.disease = req.body.disease;
+            data.DOB = req.body.DOB;
             
     }
     data.save();
@@ -27,8 +28,8 @@ router.post('/' , (req , res)=>{
             email : req.body.email , 
             password: req.body.password ,
             location : req.body.location ,
-            disease : req.body.disease
-            
+            disease : req.body.disease,
+            DOB : req.body.DOB
     });
     data.save();
 }
