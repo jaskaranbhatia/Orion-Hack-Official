@@ -34,6 +34,9 @@ export class Header extends Component {
                       <li className="nav-item">
                         <Link className="nav-link" to="/contact">Contact</Link>
                       </li>
+                      <li className="nav-item">
+                        <Link className="nav-link" to="/login">Login</Link>
+                      </li>
                     </ul>
                   </div>
                   <a id="search_1" href="javascript:void(0)"><i className="ti-search" /></a>

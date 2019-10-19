@@ -10,6 +10,7 @@ import Features from './components/features';
 import Blog from './components/blog';
 import Contact from './components/contact';
 import Register from './components/register';
+import Login from './components/login';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Route path="/blog" component={Blog} exact />
       <Route path="/contact" component={Contact} exact />
       <Route path="/register" component={Register} exact />
+      <Route path="/login" component={Login} exact />
       <Footer />
       </Router>
     </React.Fragment>
