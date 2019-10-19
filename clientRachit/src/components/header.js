@@ -1,8 +1,9 @@
-var NewComponent = React.createClass({
-    render: function() {
-      return (
-  
-        <header className="main_menu home_menu">
+import React, { Component } from 'react'
+
+export class Header extends Component {
+    render() {
+        return (
+            <header className="main_menu home_menu">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-12">
@@ -49,26 +50,19 @@ var NewComponent = React.createClass({
                     <a className="dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <i className="fas fa-cart-plus" />
                     </a>
-                    {/* <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <div class="single_product">
+                    <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <div className="single_product">
   
                                   </div>
-                              </div> */}
+                              </div> 
                   </div>
                 </nav>
               </div>
             </div>
           </div>
-          <div className="search_input" id="search_input_box">
-            <div className="container ">
-              <form className="d-flex justify-content-between search-inner">
-                <input type="text" className="form-control" id="search_input" placeholder="Search Here" />
-                <button type="submit" className="btn" />
-                <span className="ti-close" id="close_search" title="Close Search" />
-              </form>
-            </div>
-          </div>
         </header>
-      );
+        )
     }
-  });
+}
+
+export default Header;

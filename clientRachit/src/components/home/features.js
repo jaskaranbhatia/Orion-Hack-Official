@@ -1,8 +1,9 @@
-var NewComponent = React.createClass({
-    render: function() {
-      return (
-  
-        <section className="feature_part padding_top">
+import React, { Component } from 'react'
+
+export class Features extends Component {
+  render() {
+    return (
+      <section className="feature_part padding_top">
           <div className="container">
             <div className="row align-items-center justify-content-between">
               <div className="col-lg-6 ">
@@ -65,6 +66,8 @@ var NewComponent = React.createClass({
           <img src="img/animate_icon/Shape.png" alt="" className="feature_icon_3" />
           <img src="img/animate_icon/shape-3.png" alt="" className="feature_icon_4" />
         </section>
-      );
-    }
-  });
+    )
+  }
+}
+
+export default Features;

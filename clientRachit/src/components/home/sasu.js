@@ -1,8 +1,9 @@
-var NewComponent = React.createClass({
-    render: function() {
-      return (
-  
-        <section className="use_sasu">
+import React, { Component } from 'react'
+
+export class sasu extends Component {
+  render() {
+    return (
+      <section className="use_sasu">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-8">
@@ -49,6 +50,8 @@ var NewComponent = React.createClass({
           <img src="img/animate_icon/Shape.png" alt="" className="feature_icon_3" />
           <img src="img/animate_icon/shape-13.png" alt="" className="feature_icon_4" />
         </section>
-      );
-    }
-  });
+    )
+  }
+}
+
+export default sasu;

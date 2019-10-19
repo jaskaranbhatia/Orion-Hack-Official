@@ -1,13 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import Footer from './components/footer';
+import Header from './components/header';
+import Home from './components/home';
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
-    </div>
-  );
+    <React.Fragment>
+      <Header />
+      <Home />
+      <Footer />
+      
+    </React.Fragment>  
+    );
 }
 
 export default App;

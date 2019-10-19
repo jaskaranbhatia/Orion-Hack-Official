@@ -1,8 +1,9 @@
-var NewComponent = React.createClass({
-    render: function() {
-      return (
-  
-        <section className="pricing_part mb_130 home_page_pricing">
+import React, { Component } from 'react'
+
+export class pricingPart extends Component {
+  render() {
+    return (
+      <section className="pricing_part mb_130 home_page_pricing">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-6">
@@ -68,6 +69,8 @@ var NewComponent = React.createClass({
           <img src="img/animate_icon/Shape-1.png" alt="" className="feature_icon_1" />
           <img src="img/animate_icon/shape.png" alt="" className="feature_icon_4" />
         </section>
-      );
-    }
-  });
+    )
+  }
+}
+
+export default pricingPart;

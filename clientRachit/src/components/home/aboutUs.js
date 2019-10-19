@@ -1,8 +1,9 @@
-var NewComponent = React.createClass({
-    render: function() {
-      return (
-  
-        <section className="about_us section_padding">
+import React, { Component } from 'react'
+
+ class About extends Component {
+  render() {
+    return (
+      <section className="about_us section_padding">
           <div className="container">
             <div className="row align-items-center justify-content-between">
               <div className="col-md-6 col-lg-5">
@@ -28,6 +29,8 @@ var NewComponent = React.createClass({
           <img src="img/animate_icon/Shape-16.png" alt="" className="feature_icon_1" />
           <img src="img/animate_icon/Shape-1.png" alt="" className="feature_icon_4" />
         </section>
-      );
-    }
-  });
+    )
+  }
+}
+
+export default About;

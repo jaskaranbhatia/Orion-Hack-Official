@@ -1,8 +1,9 @@
-var NewComponent = React.createClass({
-    render: function() {
-      return (
-  
-        <footer className="footer_part">
+import React, { Component } from 'react'
+
+export class Footer extends Component {
+  render() {
+    return (
+      <footer className="footer_part">
           <div className="container">
             <div className="row">
               <div className="col-sm-6 col-lg-3">
@@ -73,6 +74,8 @@ var NewComponent = React.createClass({
             </div>
           </div>
         </footer>
-      );
-    }
-  });
+    )
+  }
+}
+
+export default Footer;

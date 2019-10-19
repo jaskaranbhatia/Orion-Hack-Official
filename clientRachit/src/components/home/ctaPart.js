@@ -1,8 +1,9 @@
-var NewComponent = React.createClass({
-    render: function() {
-      return (
-  
-        <section className="cta_part section_padding">
+import React, { Component } from 'react'
+
+export class CtaPart extends Component {
+  render() {
+    return (
+      <section className="cta_part section_padding">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-8 col-xl-6">
@@ -18,6 +19,8 @@ var NewComponent = React.createClass({
             </div>
           </div>
         </section>
-      );
-    }
-  });
+    )
+  }
+}
+
+export default CtaPart;
