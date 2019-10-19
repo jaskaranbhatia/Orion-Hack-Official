@@ -9,6 +9,7 @@ import Home from './components/home';
 import Features from './components/features';
 import Blog from './components/blog';
 import Contact from './components/contact';
+import Register from './components/register';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path="/predictor" component={Features} exact />
       <Route path="/blog" component={Blog} exact />
       <Route path="/contact" component={Contact} exact />
+      <Route path="/register" component={Register} exact />
       <Footer />
       </Router>
     </React.Fragment>

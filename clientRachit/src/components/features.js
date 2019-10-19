@@ -9,11 +9,14 @@ class breadcrumb extends Component {
             <div className="col-lg-12">
               <div className="breadcrumb_iner text-center">
                 <div className="breadcrumb_iner_item">
-                  <h2>featured</h2>
+                  <h2>Disease Predictor</h2>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+        <div className="container">
+          
         </div>
       </section>
         )

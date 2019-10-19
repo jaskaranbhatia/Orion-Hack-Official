@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+import {Route,Link,BrowserRouter as Router} from 'react-router-dom';
 
 class Banner extends Component {
     render() {
         return (
-            
+        <div>
         <section className="banner_part">
         <div className="container">
           <div className="row align-items-center">
@@ -15,7 +16,7 @@ class Banner extends Component {
                     sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam.</p>
                   <a href="#" className="btn_2 banner_btn_1">Disease Predictor</a>
-                  <a href="#" className="btn_2 banner_btn_2">Register Now For Free</a>
+                  <Link to="/register" className="btn_2 banner_btn_2">Register Now For Free</Link>
                 </div>
               </div>
             </div>
@@ -27,6 +28,7 @@ class Banner extends Component {
           </div>
         </div>
       </section>
+      </div>
         )
     }
 }
