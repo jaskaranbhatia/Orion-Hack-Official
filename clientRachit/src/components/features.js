@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export class breadcrumb extends Component {
+class breadcrumb extends Component {
     render() {
         return (
             <section className="breadcrumb breadcrumb_bg">

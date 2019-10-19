@@ -10,13 +10,12 @@ class Banner extends Component {
             <div className="col-lg-7">
               <div className="banner_text">
                 <div className="banner_text_iner">
-                  <h1>Drive More Customers
-                    Through Digital</h1>
+                  <h1>AI Driven Health-Care By Your Personal Medic</h1>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam.</p>
-                  <a href="#" className="btn_2 banner_btn_1">Get Started </a>
-                  <a href="#" className="btn_2 banner_btn_2">Sign up for free </a>
+                  <a href="#" className="btn_2 banner_btn_1">Disease Predictor</a>
+                  <a href="#" className="btn_2 banner_btn_2">Register Now For Free</a>
                 </div>
               </div>
             </div>

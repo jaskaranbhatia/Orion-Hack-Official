@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export class price extends Component {
+class price extends Component {
     render() {
         return (
             <section className="breadcrumb breadcrumb_bg">
@@ -19,3 +19,5 @@ export class price extends Component {
         )
     }
 }
+
+export default price;
