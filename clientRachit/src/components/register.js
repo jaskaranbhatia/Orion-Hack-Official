@@ -18,17 +18,17 @@ class register extends Component {
         <div className="container">
         <form>
         <div className="form-group">
-        <label htmlFor="exampleInputEmail1">Username</label>
+        <label htmlFor="exampleInputEmail1"><h2><font color="white">Username</font></h2></label>
         <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Username" />
-        <small id="emailHelp" className="form-text text-muted">Your username is unique to you</small>
+        <small id="emailHelp" className="form-text text-muted"><h6>Your username is unique to you</h6></small>
       </div>
           <div className="form-group">
-            <label htmlFor="exampleInputEmail1">Email address</label>
+            <label htmlFor="exampleInputEmail1"><h2><font color="white">Email Address</font></h2></label>
             <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
-            <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
+            <small id="emailHelp" className="form-text text-muted"><h6>We'll never share your email with anyone else.</h6></small>
           </div>
           <div className="form-group">
-            <label htmlFor="exampleInputPassword1">Password</label>
+            <label htmlFor="exampleInputPassword1"><h2><font color="white">Password</font></h2></label>
             <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
           </div>
           <div className="form-group form-check">
