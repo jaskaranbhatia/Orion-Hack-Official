@@ -15,4 +15,5 @@ mongoose.connect("mongodb://localhost/orion" , {newUrlParser : true})
  app.use('/history', history);
  app.use('/profile', profile);
  app.use('/user', user);
- app.listen(4000 , ()=>console.log("ServerUp"));
+ const port = process.env.PORT || 4000;
+ app.listen(PORT , ()=>console.log("ServerUp"));
