@@ -6,6 +6,7 @@ const jwt = require('jsonwebtoken');
 router.put('/' , async (req , res)=>{
     try{
     const data = await UserModel.findOne({"name": req.body.name});
+    console.log("dfdsfds");
     if(data)
     {
             data.email = req.body.email;

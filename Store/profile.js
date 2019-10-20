@@ -57,9 +57,9 @@ catch(e)
 }
 );
 
-router.get('/allergies' , async (req , res)=>{
+router.get('/allergies/:name' , async (req , res)=>{
     try{
-    const id = await profileModel.findOne({"name":req.body.allergies});
+    const id = await profileModel.findOne({"name":req.params.name});
     res.json(id);
 }
 catch(e)
